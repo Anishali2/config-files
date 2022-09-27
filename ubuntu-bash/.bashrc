@@ -1,3 +1,11 @@
-alias gc="git commit -m ${1}"
-alias gs='git status'
+alias start='code . && npm start'
 alias ga='git add .'
+alias gs='git status'
+alias gi='git init'
+alias c1='cd ../'
+alias c2='cd ../../'
+alias c3='cd ../../../'
+alias gc="git commit -m ${1}"
+alias giga="cd && cd WorkSpace/netixsol/gigaland/"
+alias alpha="cd && cd WorkSpace/Alphadex-Inteface/"
+alias token="cd && cd WorkSpace/netixsol/Token-Generator-App"
