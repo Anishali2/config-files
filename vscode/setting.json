@@ -1,0 +1,52 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "javascript": true,
+    "css": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "vim.digraphs": {},
+  "explorer.confirmDelete": false,
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/anish/.local/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.win32": "/home/anish/.config/nvim/init.vim",
+  "vim.vimrc.enable": true,
+  "vim.normalModeKeyBindings": [
+    {
+            "before":["y"],
+            "commands":["editor.action.clipboardCopyAction"],
+            "when":"textInputFocus"
+        },
+  ],
+
+  "vscode-neovim.highlightGroups.highlights": {
+
+    "Directory": "vim",
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground",
+      "borderColor": "theme.editor.findMatchHighlightBorder"
+    },
+    "Visual": {
+      "backgroundColor": "theme.editor.selectionBackground"
+    },
+    "Conceal": "vim",
+    "Substitute": "vim",
+
+  }
+}
