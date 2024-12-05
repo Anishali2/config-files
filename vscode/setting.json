@@ -1,52 +1,108 @@
 {
-  "workbench.colorTheme": "Default Dark+",
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
     "plaintext": false,
-    "markdown": false,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
     "javascript": true,
-    "css": true
+    "css": true,
+    "typescriptreact": true,
+    "typescript": true
   },
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "files.exclude": {
+    ".vercel/": true,
+    "**/.git": false,
+    "build/": true,
+    "dist/": true,
+    "node_modules/": true
+  },
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  
+  // "typescript.tsserver.maxTsServerMemory": 8192,
+  // "workbench.experimental.fastWorkspaceLoading": true,
+  "telemetry.telemetryLevel": "off",
+  "files.autoSaveDelay": 200,
+  // want to improve speed of vscode so add some settings to improve speed
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
   "workbench.iconTheme": "material-icon-theme",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
   "vim.digraphs": {},
   "explorer.confirmDelete": false,
-  "vscode-neovim.neovimExecutablePaths.linux": "/home/anish/.local/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.win32": "/home/anish/.config/nvim/init.vim",
   "vim.vimrc.enable": true,
+  "vim.leader": "<space>",
+  "vim.easymotionMarkerBackgroundColor": "#7e57c2",
+  "vim.easymotionMarkerForegroundColorOneChar": "#ffffff",
+  "vim.easymotionDimColor": "#777777",
+  "vim.easymotionIncSearchForegroundColor": "#7fbf00",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#ffffff",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#ffffff",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+
+      "after": ["leader", "leader", "leader", "b", "d", "w"]
+    }
+  ],
+  "vim.easymotion": true,
+  "vim.hlsearch": true,
   "vim.normalModeKeyBindings": [
     {
-            "before":["y"],
-            "commands":["editor.action.clipboardCopyAction"],
-            "when":"textInputFocus"
-        },
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["y"],
+      "commands": ["editor.action.clipboardCopyAction"],
+      "when": "textInputFocus"
+    }
   ],
 
-  "vscode-neovim.highlightGroups.highlights": {
-
-    "Directory": "vim",
-    "IncSearch": {
-      "backgroundColor": "theme.editor.findMatchBackground",
-      "borderColor": "theme.editor.findMatchBorder"
-    },
-    "Search": {
-      "backgroundColor": "theme.editor.findMatchHighlightBackground",
-      "borderColor": "theme.editor.findMatchHighlightBorder"
-    },
-    "Visual": {
-      "backgroundColor": "theme.editor.selectionBackground"
-    },
-    "Conceal": "vim",
-    "Substitute": "vim",
-
-  }
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-k>": false,
+    "<C-c>": false,
+    "<C-u>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-a>": true,
+    "<C-f>": false,
+    "<C-h>": false,
+    "<C-t>": false
+  },
+  "files.associations": {
+    "*.vim": "bat"
+  },
+  "json.schemas": [],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.mouseWheelScrollSensitivity": 3,
+  "files.autoSave": "afterDelay",
+  "editor.minimap.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.endOfLine": "auto",
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.windows": {},
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "window.confirmSaveUntitledWorkspace": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "gitlens.views.commitDetails.files.layout": "tree",
+  "extensions.ignoreRecommendations": true,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
 }
+
