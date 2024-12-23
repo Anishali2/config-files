@@ -13,18 +13,19 @@ export ZSH="$HOME/.oh-my-zsh"
 set $mod Mod1
 alias gs='git status'
 alias gi='git init'
+alias i='nvim'
 alias ga='git add .'
 alias c1='cd ../'
 alias c2='cd ../../'
 alias c3='cd ../../../'
 alias pi="pnpm install"
 alias pd="pnpm run dev"
-alias gc="git commit -m ${1}"
-alias cc="git commit -m ${1}"
 alias yd="yarn dev"
 alias t2="cd && cd fillinx/tapday"
 alias np="cd && cd fillinx/fillinx-provider"
-
+alias .c="cd && cd .config"
+alias gpull="git pull origin main"
+alias gpush="git push origin main"
 alias c.="code ."
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -101,6 +102,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+# Bind zsh auto-completion suggestions 
+
+bindkey '^ ' autosuggest-accept
+
+# Validate tmux configuration
 
 # User configuration
 
@@ -127,11 +133,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+gc() {
+  git commit -m "$1"
+}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Created by `pipx` on 2024-04-13 23:36:36
 export PATH="$PATH:/home/anish/.local/bin"
+export TERM=tmux-256color
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
