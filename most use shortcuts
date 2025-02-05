@@ -1,0 +1,29 @@
+use full shortcuts 
+
+Ctrl + Shift + k = toggle neovim to terminal
+Ctrl + o = next tmux pane
+Ctrl + i = next buffer neovim
+Ctrl + p = previously opened files
+Ctrl + a = select all
+Ctrl + s = save all
+Ctrl + z = undo 
+Ctrl + c = copy 
+Ctrl + x = cut
+
+Ctrl + n = next lsp
+Ctrl + p = previous lsp
+
+Ctrl + k = up move
+Ctrl + h = left move
+Ctrl + l = right move
+Ctrl + j = down move
+
+
+<leader>u = go to definiation
+<leader>tt = toggle true false
+<leader>gs = git_status window ( A = git add . | gg = commit + push )
+<leader>ta = add 'use client' on top of file 
+<leader>n = float neotree
+<leader>sf = search files
+<leader>sg = search text in files
+<leader>tf = toggle terminal in neovim
